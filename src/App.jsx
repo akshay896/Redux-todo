@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addTodo, toggleTodo, deleteTodo } from "./redux/todoSlice";
+import { addTodo, compelteTodo, deleteTodo } from "./redux/todoSlice";
 import "./App.css";
 import { Table } from "react-bootstrap";
 
@@ -53,7 +53,7 @@ function App() {
                       <input
                         type="checkbox"
                         checked={todo.completed}
-                        onChange={() => dispatch(toggleTodo(todo.id))}
+                        onChange={() => dispatch(compelteTodo(todo.id))}
                       />
                     </td>
                     <td>
