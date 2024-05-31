@@ -39,13 +39,7 @@ function App() {
         <div className="w-75 m-auto">
           {todos.length > 0 ? (
             <Table striped bordered>
-              <thead>
-                <tr>
-                  <th>Completed</th>
-                  <th>Task</th>
-                  <th>Delete</th>
-                </tr>
-              </thead>
+              
               <tbody>
                 {todos.map((todo) => (
                   <tr key={todo.id}>
